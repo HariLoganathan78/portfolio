@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hari | Full Stack Developer</title>
+
+  <!-- AOS Scroll Animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div id="particles-js"></div>
+
+  <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <i class="fas fa-code"></i> Full Stack & App Dev
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="nav-links" id="navMenu">
+    <li><a href="#home" id="home-link" onclick="closeMenu()">Home</a></li>
+    <li><a href="#about" id="about-link" onclick="closeMenu()">About</a></li>
+    <li><a href="#skills1" id="skills1-link" onclick="closeMenu()">Skills</a></li>
+    <li><a href="#projects" id="projects-link" onclick="closeMenu()">Projects</a></li>
+    <li><a href="#contact" id="contact-link" onclick="closeMenu()">Contact</a></li>
+  </ul>
+</nav>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="home-section transparent-home">
+  <div class="home-content">
+    <div class="home-text">
+      <h1 class="line line1">👋 I'm Hari Loganathan</h1>
+      <p class="line line2" style="color: white; font-weight: 600;">
+  <i class="fas fa-laptop-code" style="color: #00c9ff; margin-right: 6px;"></i> 
+  <span style="color: white;">Full Stack</span> & 
+  <i class="fas fa-mobile-alt" style="color: #ff4d6d; margin-right: 6px; margin-left: 10px;"></i> 
+  <span style="color: white;">App Developer</span>
+</p>
+      <p class="line line3">📍 From Dindigul, Tamil Nadu</p>
+
+      <p class="line line3" style="color: #ccc; font-style: italic; margin-top: 20px;">
+  “To survive in this digital world, being good at code isn't optional — it's essential.” 
+</p>
+
+    </div>
+    
+    <div class="home-image">
+      <img src="mine.jpg" alt="Hari's Photo" />
+    </div>
+  </div>
+</section>
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="home-image">
+  <img src="aboutme.png" alt="My Photo" class="about-image line">
+</div>
+      <div class="about-col-2">
+  <h1 class="sub-title line">About Me</h1>
+  <p class="line line1">
+    I'm a Full Stack and App Developer.<br>
+    I’ve created websites and apps using modern tools and technologies.
+  </p>
+  <div class="tab-titles line line2">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('education')">Education</p>
+  </div>
+  <div class="tab-contents active-tab line line3" id="skills">
+    <ul>
+      <li><span>Website Creation</span><br>HTML, CSS, JavaScript</li>
+      <li><span>App Development</span><br>Java, Kotlin, Flutter</li>
+    </ul>
+  </div>
+  <div class="tab-contents line line3" id="education">
+    <ul>
+      <li><span>2020</span><br>SSLC – SMBM School – 68%</li>
+      <li><span>2022</span><br>HSC – SMBM School – 78%</li>
+      <li><span>2022–Now</span><br>B.E CSE – KPRIET – 7.8 CGPA</li>
+    </ul>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<div id="skills1">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Left Content -->
+      <div class="skills1-col-2">
+        <h1 class="sub-title line">My Skills</h1>
+        <p class="line line1">
+          Here are some of the tools & technologies, I'm using to do my projects.
+        </p>
+
+        <!-- Updated Titles -->
+        <div class="skills1-titles line line2">
+          <p class="skills1-links active-link" onclick="openSkills1Tab('frontend', event)">Frontend</p>
+          <p class="skills1-links" onclick="openSkills1Tab('backend', event)">Backend</p>
+          <p class="skills1-links" onclick="openSkills1Tab('mobile', event)">Mobile</p>
+        </div>
+
+        <!-- Updated Tab Contents -->
+        <div class="skills1-contents active-tab line line3" id="frontend">
+          <ul>
+            <li><span>HTML, CSS</span><br>Responsive Web Design</li>
+            <li><span>JavaScript</span><br>Dynamic Interfaces</li>
+            <li><span>React.js</span><br>Component-based SPA</li>
+          </ul>
+        </div>
+
+        <div class="skills1-contents line line3" id="backend">
+          <ul>
+            <li><span>Node.js</span><br>Server-side APIs</li>
+            <li><span>PHP</span><br>Server-side Scripting</li>
+            <li><span>Firebase</span><br>NoSQL + Authentication</li>
+          </ul>
+        </div>
+
+        <div class="skills1-contents line line3" id="mobile">
+          <ul>
+            <li><span>Java / Kotlin</span><br>Android Development</li>
+            <li><span>Flutter</span><br>Cross-platform Apps</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="home-image">
+        <img src="myskills.png" alt="My Photo" class="about-image line">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="projects">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Left Side Image -->
+      <div class="home-image">
+        <img src="projects.png" alt="Projects Image" class="projects-image line">
+      </div>
+
+      <!-- Right Side Content -->
+      <div class="projects-col-2">
+        <h1 class="sub-title line">Projects</h1>
+        <p class="line line1">
+          Here are some of the projects I have worked on using various technologies.
+        </p>
+
+        <div class="projects-titles line line2">
+          <p class="projects-links active-link" onclick="openProjectsTab('minor', event)">Minor</p>
+          <p class="projects-links" onclick="openProjectsTab('college', event)">College</p>
+          <p class="projects-links" onclick="openProjectsTab('international', event)">International</p>
+        </div>
+
+        <div class="projects-contents active-tab line line3" id="minor">
+          <ul>
+            <li>
+  <span>HTML, CSS, JS</span><br>
+  💻 Calculator App | 📝 ToDo List | ⏱ Stopwatch | 📥 Form Validator
+</li>
+          </ul>
+        </div>
+
+        <div class="projects-contents line line3" id="college">
+  <ul>
+    <li><span>Android Studio</span><br>
+      Turf Booking App developed for my college project
+      <br><br>
+      <a href="https://drive.google.com/file/d/1a9szGguSNJoCDYJRaYUzfHkE_FtUoYjm/view?usp=drive_link" download class="apk-btn">📱 Install APK</a>
+    </li>
+  </ul>
+</div>
+
+        <div class="projects-contents line line3" id="international">
+          <ul>
+            <li><span>HTML, CSS, JS</span><br>Turf Booking Website for Sri Lanka</li>
+            🔗 <a href="https://gamengobookings.com/" target="_blank" style="color: #00ffff; text-decoration: underline;">Visit Site</a>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <!-- Left Side Content -->
+      <div class="contact-col-2">
+        <h1 class="sub-title line">Contact Me</h1>
+        <p class="line line1"><i class="fa-solid fa-paper-plane"></i> h9092302@gmail.com</p>
+        <p class="line line2"><i class="fa-solid fa-phone"></i> 8870080753</p>
+        
+        <div class="social-icons line line3">
+          <a href="https://www.linkedin.com/in/hari-loganathan-018636256"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/msd7_hari78"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/HariLoganathan78"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <!-- Download Button Above the Form -->
+<a href="Hari Resume.pdf" download class="resume-btn line line4">Download Resume</a>
+
+        <form name="submit-to-google-sheet" class="line line4">
+          <input type="text" name="Name" placeholder="Your Name" required />
+          <input type="email" name="Email" placeholder="Your Email" required />
+          <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+          <span id="msg"></span>
+        </form>
+      </div>
+      <!-- Right Side Image -->
+      <div class="contact-col-1">
+        <img src="contact.png" alt="Contact Image" class="contact-image line" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast Message Box -->
+<div id="toast" class="toast">Thank you!</div>
+
+<div id="section-popup" class="popup-box"></div>
+
+<script>
+  const navMenu = document.getElementById("navMenu");
+
+  function toggleMenu() {
+    navMenu.classList.toggle("active");
+  }
+
+  function closeMenu() {
+    navMenu.classList.remove("active");
+  }
+</script>
+
+<script>
+  const sections = document.querySelectorAll("section, #about, #skills1, #projects, #contact");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      } else {
+        // Remove the class when the section is out of view
+        entry.target.classList.remove("active");
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
+
+<script>
+  const popup = document.getElementById("section-popup");
+
+  function showPopup(text) {
+    popup.innerText = text;
+    popup.classList.add("show");
+
+    setTimeout(() => {
+      popup.classList.remove("show");
+    }, 2000); // auto-close after 2 sec
+  }
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        if (id === "about") showPopup("📄 Viewing About");
+        else if (id === "skills1") showPopup("🛠️ Viewing Skills");
+        else if (id === "projects") showPopup("🚀 Viewing Projects");
+        else if (id === "contact") showPopup("📬 Viewing Contact");
+      }
+    });
+  }, { threshold: 0.5 });
+
+  // Observe the sections
+  ["about", "skills1", "projects", "contact"].forEach(id => {
+    const section = document.getElementById(id);
+    if (section) sectionObserver.observe(section);
+  });
+</script>
+
+<!-- JS Submission to Google Sheet -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzxiIIz4fGhL_Tv6Wc-DrdNchnmzL2GMC-RPBxq9qFqXfToUB0Mc3k1IBm9qad1vn6kfQ/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(() => { msg.innerHTML = ""; }, 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
+
+<script>
+  // Toast logic
+  function showToast(message) {
+    const toast = document.getElementById('toast');
+    toast.innerText = message;
+    toast.classList.add('show');
+
+    setTimeout(() => {
+      toast.classList.remove('show');
+    }, 2000); // Hide after 2 seconds
+  }
+
+  // Trigger toast on submit
+  const contactForm = document.querySelector('form'); // or use form name or ID
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent real submission
+    showToast("✅ Message sent successfully!");
+
+    // Optional: Reset the form
+    contactForm.reset();
+  });
+</script>
+
+
+<!-- Scroll Animation Trigger -->
+<script>
+  document.getElementById('contact-link').addEventListener('click', () => {
+    const lines = document.querySelectorAll('#contact .line');
+    const image = document.querySelector('#contact .contact-image');
+
+    lines.forEach((line, i) => {
+      line.style.animation = 'none';
+      line.offsetHeight;
+      line.style.animation = 'slideUp 0.8s ease forwards';
+      line.style.animationDelay = `${0.3 + i * 0.3}s`;
+    });
+
+    if (image) {
+      image.style.animation = 'none';
+      image.offsetHeight;
+      image.style.animation = 'zoomInFade 1s ease forwards';
+      image.style.animationDelay = '0.5s';
+    }
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash === '#contact') {
+      document.getElementById('contact-link').click();
+    }
+  });
+</script>
+
+
+  <!-- AOS & Particles.js Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1200, once: true });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          out_mode: "bounce"
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          grab: { distance: 200, line_linked: { opacity: 0.6 } },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+  <script>
+  const homeLink = document.getElementById('home-link');
+
+  homeLink.addEventListener('click', () => {
+    // Get animated elements
+    const lines = document.querySelectorAll('#home .line');
+    const image = document.querySelector('#home .home-image img');
+
+    // Remove animation classes
+    lines.forEach(line => {
+      line.style.animation = 'none';
+      line.offsetHeight; // Force reflow
+      line.style.animation = '';
+    });
+
+    image.style.animation = 'none';
+    image.offsetHeight; // Force reflow
+    image.style.animation = '';
+    
+    // Re-add animation classes (by resetting animation name & delay)
+    lines[0].style.animation = 'slideUp 0.8s ease forwards';
+    lines[0].style.animationDelay = '0.3s';
+    
+    lines[1].style.animation = 'slideUp 0.8s ease forwards';
+    lines[1].style.animationDelay = '0.6s';
+
+    lines[2].style.animation = 'slideUp 0.8s ease forwards';
+    lines[2].style.animationDelay = '0.9s';
+
+    image.style.animation = 'zoomOut 1.2s ease forwards';
+    image.style.animationDelay = '1.1s';
+  });
+</script>
+
+<script>
+  function opentab(tabName) {
+    var tabLinks = document.getElementsByClassName('tab-links');
+    var tabContents = document.getElementsByClassName('tab-contents');
+
+    for (let link of tabLinks) {
+      link.classList.remove('active-link');
+    }
+
+    for (let tab of tabContents) {
+      tab.classList.remove('active-tab');
+    }
+
+    document.getElementById(tabName).classList.add('active-tab');
+    event.currentTarget.classList.add('active-link');
+  }
+</script>
+
+<script>
+  document.getElementById('about-link').addEventListener('click', () => {
+    const lines = document.querySelectorAll('#about .line');
+    const image = document.querySelector('#about .about-image');
+
+    // Re-trigger text animations
+    lines.forEach((line, i) => {
+      line.style.animation = 'none';
+      line.offsetHeight;
+      line.style.animation = `slideUp 0.8s ease forwards`;
+      line.style.animationDelay = `${0.3 + i * 0.3}s`;
+    });
+
+    // Re-trigger image animation using zoomOut like Home
+    if (image) {
+      image.style.animation = 'none';
+      image.offsetHeight;
+      image.style.animation = 'zoomOut 1.2s ease forwards';
+      image.style.animationDelay = '1.1s';
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash === '#about') {
+      document.getElementById('about-link').click();
+    }
+  });
+</script>
+
+<script>
+  function openSkills1Tab(tabName, event) {
+    const tabLinks = document.getElementsByClassName('skills1-links');
+    const tabContents = document.getElementsByClassName('skills1-contents');
+
+    for (let link of tabLinks) {
+      link.classList.remove('active-link');
+    }
+
+    for (let tab of tabContents) {
+      tab.classList.remove('active-tab');
+    }
+
+    document.getElementById(tabName).classList.add('active-tab');
+    if (event && event.currentTarget) {
+      event.currentTarget.classList.add('active-link');
+    }
+  }
+</script>
+
+<script>
+  document.getElementById('skills1-link').addEventListener('click', () => {
+    const lines = document.querySelectorAll('#skills1 .line');
+    const image = document.querySelector('#skills1 .about-image');
+
+    lines.forEach((line, i) => {
+      line.style.animation = 'none';
+      line.offsetHeight;
+      line.style.animation = `slideUp 0.8s ease forwards`;
+      line.style.animationDelay = `${0.3 + i * 0.3}s`;
+    });
+
+    if (image) {
+      image.style.animation = 'none';
+      image.offsetHeight;
+      image.style.animation = 'zoomOut 1.2s ease forwards';
+      image.style.animationDelay = '1.2s';
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash === '#skills1') {
+      document.getElementById('skills1-link').click();
+    }
+  });
+</script>
+
+<script>
+  function openProjectsTab(tabName, event) {
+    const tabLinks = document.getElementsByClassName('projects-links');
+    const tabContents = document.getElementsByClassName('projects-contents');
+
+    for (let link of tabLinks) {
+      link.classList.remove('active-link');
+    }
+
+    for (let tab of tabContents) {
+      tab.classList.remove('active-tab');
+    }
+
+    document.getElementById(tabName).classList.add('active-tab');
+    if (event && event.currentTarget) {
+      event.currentTarget.classList.add('active-link');
+    }
+  }
+
+  document.getElementById('projects-link').addEventListener('click', () => {
+  const lines = document.querySelectorAll('#projects .line');
+  const image = document.querySelector('#projects .projects-image');
+
+  lines.forEach((line, i) => {
+    line.style.animation = 'none';
+    line.offsetHeight;
+    line.style.animation = `slideUp 0.8s ease forwards`;
+    line.style.animationDelay = `${0.3 + i * 0.3}s`;
+  });
+
+  if (image) {
+    image.style.animation = 'none';
+    image.offsetHeight;
+    image.style.animation = 'zoomOut 1.2s ease forwards';
+    image.style.animationDelay = '1.1s';
+  }
+});
+
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash === '#projects') {
+      document.getElementById('projects-link').click();
+    }
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash === '#contact') {
+      document.getElementById('contact-link').click();
+    }
+  });
+</script>
+
+<script>
+  const cursor = document.createElement("div");
+  cursor.classList.add("cursor");
+  document.body.appendChild(cursor);
+
+  // Move the cursor smoothly
+  window.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+    cursor.style.opacity = 1; // Ensure it's visible always
+  });
+
+  // Optional: Show a quick "pulse" effect on click
+  window.addEventListener("mousedown", () => {
+    cursor.style.transform = "translate(-50%, -50%) scale(0.7)";
+  });
+
+  window.addEventListener("mouseup", () => {
+    cursor.style.transform = "translate(-50%, -50%) scale(1)";
+  });
+
+  // In case cursor is stuck hidden, restore visibility
+  window.addEventListener("mouseleave", () => {
+    cursor.style.opacity = 0;
+  });
+
+  window.addEventListener("mouseenter", () => {
+    cursor.style.opacity = 1;
+  });
+</script>
+
+</body>
+</html>
